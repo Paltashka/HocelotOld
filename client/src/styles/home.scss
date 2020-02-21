@@ -1,0 +1,18 @@
+.home {
+
+  &__subheading {
+    font-family: Crimson Text;
+    font-size: 27px;
+    line-height: 140.62%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+
+  &__middle {
+    display: flex;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+}
