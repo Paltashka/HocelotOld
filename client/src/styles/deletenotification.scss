@@ -1,9 +1,9 @@
 .deletenotification {
   width: 550px;
   height: 539px;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  left: 50%;
+  left: calc(50% + 43px);
   transform: translate(-50%, -50%);
   background: linear-gradient(107.89deg, #2F394299 0%, #19243199 100%);
   mix-blend-mode: normal;
@@ -11,13 +11,29 @@
   border-radius: 10px;
   z-index: 6;
 
+  @media screen and (max-width: 750px) {
+    width: 75vw;
+    height: 440px;
+  }
+
+  &__middle {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
   &__top {
+    box-sizing: border-box;
+    padding: 10px;
     position: relative;
     height: 257px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 750px) {
+      height: 150px;
+    }
 
     &::after {
       content: "";

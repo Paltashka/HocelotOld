@@ -14,14 +14,16 @@ const DeleteNotifications = ({ setNotification }) => {
         />
         <p className="deletenotification__title">Are you sure?</p>
       </div>
-      <p className="deletenotification__text">
-        Are you sure you want to delete Lorem ipsum dolor sit amae?<br />
-        <strong>This action cannot be reversed.</strong>
-      </p>
-      <div className="deletenotification__border">
-        <button className="deletenotification__button" type="button">No, i have thoughy better</button>
+      <div className="deletenotification__middle">
+        <p className="deletenotification__text">
+          Are you sure you want to delete Lorem ipsum dolor sit amae?<br />
+          <strong>This action cannot be reversed.</strong>
+        </p>
+        <div className="deletenotification__border">
+          <button className="deletenotification__button" type="button">No, i have thoughy better</button>
+        </div>
+        <p onClick={() => setNotification(false)} className="deletenotification__agreement">Yes, go</p>
       </div>
-      <p onClick={() => setNotification(false)} className="deletenotification__agreement">Yes, go</p>
     </div>
     </>
   );

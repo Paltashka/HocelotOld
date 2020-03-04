@@ -11,9 +11,15 @@
 @import "./styles/projectstable.scss";
 @import "./styles/deletenotification.scss";
 @import "./styles/notifications.scss";
+@import "./styles/newprojects.scss";
+@import "./styles/newprojecttablerow.scss";
+@import "./styles/navbar.scss";
+@import "./styles/dragdrop.scss";
+@import "./styles/upload.scss";
+@import "./styles/quality.scss";
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -55,6 +61,11 @@ body {
   max-width: 1920px;
   padding: 50px;
   height: 100%;
+  
+  @media screen and (max-width: 800px) {
+    padding: 25px;
+    margin: auto;
+  }
 }
 
 .cover-layer {

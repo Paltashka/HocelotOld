@@ -1,14 +1,18 @@
 .datasetgraph {
   text-align: center;
   box-sizing: border-box;
-  padding: 25px 0;
+  padding: 25px 50px;
   background: #3321282D;
   mix-blend-mode: multiply;
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  height: 400px;
-  width: 368px;
+  min-height: 400px;
+  max-width: 368px;
   margin-left: 43px;
+
+  @media screen and (max-width: 1000px) {
+    margin: auto;
+  }
 
   &__heading {
     margin: 0;

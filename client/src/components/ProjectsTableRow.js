@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
 import DeleteNotifications from './DeleteNotifications';
+import { NavLink } from 'react-router-dom';
 
 const ProjectsTableRow = ({ project }) => {
   const [active, setActive] = useState(false);
@@ -8,13 +9,13 @@ const ProjectsTableRow = ({ project }) => {
 
   return (
     <>
-      <tr className="projectstable__bodyrow">
-        <td><img src="/icons/processor-table.svg" alt="processor icon" />{project.name}</td>
-        <td>{project.date}</td>
-        <td>{project.records}</td>
-        <td>{project.status}</td>
-        <td>{project.businessCase}</td>
-        <td>{project.client}</td>
+     <tr className="projectstable__bodyrow">
+        <td><NavLink to='/newProject'><img src="/icons/processor-table.svg" alt="processor icon" />{project.name}</NavLink></td>
+        <td> <NavLink to='/newProject'>{project.date}</NavLink></td>
+        <td>  <NavLink to='/newProject'>{project.records}</NavLink></td>
+        <td>  <NavLink to='/newProject'>{project.status}</NavLink></td>
+        <td>  <NavLink to='/newProject'>{project.businessCase}</NavLink></td>
+        <td>  <NavLink to='/newProject'>{project.client}</NavLink></td>
         <td onClick={() => setActive(!active)} className="projectstable__dropdown-image">
           <img src="/icons/arrow-down.svg" alt="arrow down" style={{ paddingRight: '40px', cursor: 'pointer' }} />
         </td>

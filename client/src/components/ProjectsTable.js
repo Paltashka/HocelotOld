@@ -60,7 +60,7 @@ const ProjectsTable = () => {
   ];
 
   return (
-    <div style={{ paddingRight: '80px', boxSizing: 'border-box' }}>
+    <div style={{ paddingRight: '80px', boxSizing: 'border-box', overflow: 'auto' }}>
       <table className="projectstable">
         <thead>
           <tr>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentTop from '../components/ContentTop';
 import ProjectsTable from '../components/ProjectsTable';
+import { NavLink } from 'react-router-dom';
 
 function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
@@ -38,7 +39,9 @@ const ListProjects = () => {
               <div className="projects__notifications">{counterNotifications}</div>
               <img className="projects__icon" src="/icons/filter.svg" alt="filter icon" />
             </div>
+            <NavLink to="/newProject">
             <button className="shorttable__button" type="button">New project<img src="/icons/proccessor.svg" alt="proccess icon" /></button>
+            </NavLink>
           </div>
         </div>
       </div>

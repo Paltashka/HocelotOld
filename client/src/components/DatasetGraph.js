@@ -2,7 +2,7 @@ import React from 'react';
 import { CircleProgress } from 'react-gradient-progress'
 
 const DatasetGraph = () => {
-  const percentage = 60;
+  const percentage = 90;
 
   return (
     <div className="datasetgraph">

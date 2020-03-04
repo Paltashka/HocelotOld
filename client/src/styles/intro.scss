@@ -2,6 +2,7 @@
   position: relative;
   margin: auto;
   height: 100%;
+  min-width: 320px;
 
   &__image {
     object-fit: contain;
@@ -10,18 +11,25 @@
     top: 0;
     right: 50%;
     transform: translateX(50%);
-    width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__heading {
     font-family: Crimson Text;
     letter-spacing: -0.02em;
     font-weight: 600;
-    font-size: 220px;
+    font-size: 13vw;
     color: white;
-    margin-top: 150px;
+    margin-top: 15vh;
     line-height: 90%;
+
+    @media screen and (max-width: 500px) {
+      margin-top: 50px;
+    } 
   }
 
   &__content {
@@ -29,6 +37,11 @@
     z-index: 999;
     max-width: 50vw;
     margin-left: 50px;
+
+    @media screen and (max-width: 500px) {
+      margin: auto;
+      max-width: 75vw;
+    } 
   }
 
   &__text {
@@ -39,6 +52,10 @@
     letter-spacing: 0.05em;
     color: rgba(255, 255, 255, 0.5);
     margin: 0;
+
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+    } 
   }
 
   &__button {

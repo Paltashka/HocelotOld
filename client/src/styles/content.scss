@@ -3,9 +3,14 @@
   padding-left: 137px;
   padding-right: 15px;
   padding-top: 20px;
+  padding-bottom: 150px;
   position: relative;
   z-index: 4;
   height: 100%;
+
+  @media screen and (max-width: 500px) {
+    padding-left: 75px;
+  }
 
   &__top {
     display: flex;
@@ -24,6 +29,10 @@
     line-height: 140.62%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+
+    @media screen  and (max-width:640px) {
+      font-size: 36px;
+    }
   }
 
   &__avatar {
